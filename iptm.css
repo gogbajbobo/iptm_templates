@@ -160,7 +160,27 @@ h4 {
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: var(--main-color);
+    /*color: var(--main-gray-color);*/
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+}
+
+.footer a {
+    color: white !important;
+    padding: 20px 15px;
+    font-weight: 800;
+}
+
+.footer a:hover {
+    color: var(--main-color) !important;
+    background-color: white !important;
 }
 
 
