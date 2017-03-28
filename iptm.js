@@ -4,6 +4,15 @@
 
 $(document).ready(function() {
 
+    scrollToSection();
+    animateSelectedSection();
+    closeNavbarOnClick();
+    
+});
+
+function scrollToSection() {
+// Прокрутка к выбранному разделу
+
     $(".navbar a, footer a[href='#iptmPage']").on('click', function(event) {
 
         if (this.hash !== "") {
@@ -21,22 +30,36 @@ $(document).ready(function() {
         }
 
     });
+    
+}
 
-});
+function animateSelectedSection() {
+    // Анимация при выборе раздела
 
+    $(window).scroll(function() {
 
-$(window).scroll(function() {
+        $(".slideanim").each(function() {
 
-    $(".slideanim").each(function() {
+            var pos = $(this).offset().top;
 
-        var pos = $(this).offset().top;
+            var winTop = $(window).scrollTop();
 
-        var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+                $(this).addClass("slide");
+            }
 
-        if (pos < winTop + 600) {
-            $(this).addClass("slide");
-        }
+        });
 
     });
 
-});
+}
+
+function closeNavbarOnClick() {
+    // Закрываем меню после выбора
+
+    $('.nav a').on('click', function() {
+        // $('.navbar-toggle').click();
+        $('.navbar-collapse').collapse('hide');
+    });
+
+}
