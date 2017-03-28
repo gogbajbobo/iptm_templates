@@ -44,7 +44,9 @@ navbar — логотип, меню, кнопки поиска, переключ
                 <!--втростепенное меню — прижато вправо-->
                 <ul class="nav navbar-nav navbar-right">
                     <!--вход-->
-                    <li><a href="#">Вход <span class="glyphicon glyphicon-log-in"></span></a></li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#iptmLogin">Вход <span class="glyphicon glyphicon-log-in"></span></a>
+                    </li>
                 </ul>
 
             </div>
@@ -309,6 +311,38 @@ navbar — логотип, меню, кнопки поиска, переключ
         </div>
     </div>
 
+
+<!--
+Подвал
+-->
+    <footer class="navbar-fixed-bottom footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 text-center">
+                    <!--кнопка поиска-->
+                    <a href="#" data-toggle="modal" data-target="#iptmSearch">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </a>
+                </div>
+                <div class="col-xs-2 text-center">
+                    <a href="#contacts">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                    </a>
+                </div>
+                <div class="col-xs-2 text-center">
+                    <!--переключалка языка-->
+                    <a href="#">EN</a>
+                </div>
+                <div class="col-xs-6">
+                    <p class="pull-right">&copy; ИПТМ РАН, 1996-2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<!--Modals-->
+
 <!-- Поиск -->
     <div class="modal fade" id="iptmSearch" role="dialog">
         <div class="modal-dialog">
@@ -343,33 +377,30 @@ navbar — логотип, меню, кнопки поиска, переключ
     </div>
 
 
-<!--
-Подвал
--->
-    <footer class="navbar-fixed-bottom footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-2 text-center">
-                    <!--кнопка поиска-->
-                    <a href="#" data-toggle="modal" data-target="#iptmSearch">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </a>
+<!--Вход-->
+    <div class="modal fade" id="iptmLogin" role="dialog">
+        <div class="modal-dialog">
+
+            <form method="post" action="/login.ru.html">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Вход</h4>
+                    </div>
+                    <div class="modal-body">
+                        <input class="form-control" name="user" placeholder="Имя пользователя" type="text" required><br>
+                        <input class="form-control" name="password" placeholder="Пароль" type="password" required><br>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Отменить</button>
+                        <button type="submit" class="btn btn-primary">Войти</button>
+                    </div>
                 </div>
-                <div class="col-xs-2 text-center">
-                    <a href="#contacts">
-                        <span class="glyphicon glyphicon-envelope"></span>
-                    </a>
-                </div>
-                <div class="col-xs-2 text-center">
-                    <!--переключалка языка-->
-                    <a href="#">EN</a>
-                </div>
-                <div class="col-xs-6">
-                    <p class="pull-right">&copy; ИПТМ РАН, 1996-2017</p>
-                </div>
-            </div>
+            </form>
+
         </div>
-    </footer>
+    </div>
+
 
 </body>
 </html>
