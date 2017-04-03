@@ -292,4 +292,10 @@ footer .glyphicon {
     .postmark {
         display: none;
     }
+    .jumbotron h6 {
+        font-size: 8px;
+    }
+    .jumbotron h3 {
+        font-size: 14px;
+    }
 }
