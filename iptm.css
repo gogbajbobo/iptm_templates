@@ -219,6 +219,7 @@ footer .glyphicon {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
+    min-width: 300px;
 }
 
 .input-mini {
