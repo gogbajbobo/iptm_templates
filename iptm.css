@@ -8,11 +8,28 @@
     --bg-grey-color: #f6f6f6;
     --panel-hover-grey-color: rgba(0,0,0, .2);
     --panel-footer-grey-color: #aaa;
+    --max-width: 1024px;
 }
 
 body {
     line-height: 1.8;
     color: #818181;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: var(--max-width);
+    background-color: var(--bg-grey-color);
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: var(--max-width);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: var(--max-width);
 }
 
 .block-title {
@@ -43,6 +60,9 @@ h4 {
     font-size: 12px !important;
     line-height: 1.42857143 !important;
     border-radius: 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: var(--max-width);
 }
 
 .navbar li a, .navbar .navbar-brand {
@@ -171,6 +191,9 @@ footer .glyphicon {
     background-color: var(--main-color);
     color: white;
     padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: var(--max-width);
 }
 
 .footer a {
