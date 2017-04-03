@@ -286,3 +286,9 @@ footer .glyphicon {
         margin: 25px 0;
     }
 }
+
+@media (max-width: 600px) {
+    .postmark {
+        display: none;
+    }
+}
