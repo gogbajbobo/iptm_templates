@@ -275,6 +275,12 @@ footer .glyphicon {
     display: inline;
 }
 
+.inner-block {
+    padding: 60px 50px;
+    border: 1px solid #ddd;
+    border-top: 0;
+}
+
 /*animation*/
 
 .slideanim {visibility:hidden;}
