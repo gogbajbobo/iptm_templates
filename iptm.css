@@ -281,6 +281,10 @@ footer .glyphicon {
     border-top: 0;
 }
 
+ul.inner-nav a {
+    color: var(--main-color) !important;
+}
+
 /*animation*/
 
 .slideanim {visibility:hidden;}
