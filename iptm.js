@@ -7,6 +7,7 @@ $(document).ready(function() {
     scrollToSection();
     animateSelectedSection();
     closeNavbarOnClick();
+    spyForScrollSpy();
     
 });
 
@@ -49,6 +50,20 @@ function animateSelectedSection() {
             }
 
         });
+
+    });
+
+}
+
+function spyForScrollSpy() {
+    // Показываем заголовок раздела в навбаре на телефоне
+
+    $('body').on('activate.bs.scrollspy', function () {
+
+        let navbarMenu = $('#menu-navbar');
+        let activeMenuItem = navbarMenu.children('li.active');
+        let activeMenuText = activeMenuItem.children('a').text();
+        $('#infotext-navbar').text(activeMenuText);
 
     });
 
