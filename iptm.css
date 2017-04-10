@@ -293,6 +293,9 @@ ul.inner-nav a {
     padding-right: 0px;
 }
 
+.inner-block > img {
+    width: 100%;
+}
 
 /*animation*/
 
