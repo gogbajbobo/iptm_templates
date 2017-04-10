@@ -277,6 +277,9 @@ footer .glyphicon {
 
 .inner-block {
     padding: 60px 50px;
+}
+
+.no-top-border {
     border: 1px solid #ddd;
     border-top: 0;
 }
