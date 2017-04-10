@@ -67,51 +67,115 @@ navbar — логотип, меню, кнопка входа, и кнопка-г
 <div class="container-fluid">
 
     <div class="row">
-
-        <div class="col-sm-10">
-
-            <div class="row">
-                <ul class="nav nav-tabs nav-justified inner-nav">
-                    <li class="active"><a href="#">Текст</a></li>
-                    <li><a href="#">Картинка</a></li>
-                    <li><a href="#">Текст с картинками</a></li>
-                    <li><a href="#">Таблица</a></li>
-                    <li><a href="#">Всё вместе</a></li>
-                </ul>
-            </div>
-
-            <div class="row bg-white">
-                <div class="inner-block">
-                    <h2 class="block-title">Заголовок</h2>
-                    <p>Институт проблем технологии микроэлектроники и&nbsp;особочистых материалов Российской академии наук (ИПТМ РАН) был создан в&nbsp;соответствии с&nbsp;постановлением ЦК&nbsp;КПСС и&nbsp;СМ от&nbsp;29&nbsp;мая 1983&nbsp;г. и постановлением Президиума АН&nbsp;СССР от&nbsp;29&nbsp;сентября 1983&nbsp;г. №1067 на&nbsp;базе подразделений Института физики твердого тела и&nbsp;начал функционировать с&nbsp;1&nbsp;января 1984&nbsp;г.</p>
-                    <hr>
-                    <br>
-                    <h2 class="block-title">Заголовок 2</h2>
-                    <p>Институт проблем технологии микроэлектроники и&nbsp;особочистых материалов Российской академии наук (ИПТМ РАН) был создан в&nbsp;соответствии с&nbsp;постановлением ЦК&nbsp;КПСС и&nbsp;СМ от&nbsp;29&nbsp;мая 1983&nbsp;г. и постановлением Президиума АН&nbsp;СССР от&nbsp;29&nbsp;сентября 1983&nbsp;г. №1067 на&nbsp;базе подразделений Института физики твердого тела и&nbsp;начал функционировать с&nbsp;1&nbsp;января 1984&nbsp;г.</p>
-                    <hr>
-                    <br>
-                    <h2 class="block-title">Заголовок 3</h2>
-                    <p>Институт проблем технологии микроэлектроники и&nbsp;особочистых материалов Российской академии наук (ИПТМ РАН) был создан в&nbsp;соответствии с&nbsp;постановлением ЦК&nbsp;КПСС и&nbsp;СМ от&nbsp;29&nbsp;мая 1983&nbsp;г. и постановлением Президиума АН&nbsp;СССР от&nbsp;29&nbsp;сентября 1983&nbsp;г. №1067 на&nbsp;базе подразделений Института физики твердого тела и&nbsp;начал функционировать с&nbsp;1&nbsp;января 1984&nbsp;г.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-sm-2">
-            <nav class="affix bg-grey">
-                <ul class="nav inner-nav">
-                    <li><a href="#">Ссылка 1</a></li>
-                    <li><a href="#">Ссылка 2</a></li>
-                    <li><a href="#">Ещё одна ссылка</a></li>
-                    <li><a href="#">И тут ссылка тоже</a></li>
-                    <li><a href="#">Ссылка опять</a></li>
-                    <li><a href="#">Шестая ссылка</a></li>
-                </ul>
-            </nav>
-        </div>
-
+        <ul class="nav nav-tabs nav-justified inner-nav">
+            <li class="active"><a data-toggle="tab" href="#text">Текст</a></li>
+            <li><a data-toggle="tab" href="#picture">Картинка</a></li>
+            <li><a data-toggle="tab" href="#textandpic">Текст с картинками</a></li>
+            <li><a data-toggle="tab" href="#table">Таблица</a></li>
+            <li><a data-toggle="tab" href="#allstuff">Всё вместе</a></li>
+        </ul>
     </div>
 
+    <div class="tab-content">
+
+        <div id="text" class="tab-pane fade in active">
+            <div class="row bg-white no-top-border">
+                <div class="col-sm-10 side-padding-0">
+                    <div class="inner-block">
+                        <h2 class="block-title">Заголовок</h2>
+                        <p>Институт проблем технологии микроэлектроники и&nbsp;особочистых материалов Российской академии наук (ИПТМ РАН) был создан в&nbsp;соответствии с&nbsp;постановлением ЦК&nbsp;КПСС и&nbsp;СМ от&nbsp;29&nbsp;мая 1983&nbsp;г. и постановлением Президиума АН&nbsp;СССР от&nbsp;29&nbsp;сентября 1983&nbsp;г. №1067 на&nbsp;базе подразделений Института физики твердого тела и&nbsp;начал функционировать с&nbsp;1&nbsp;января 1984&nbsp;г.</p>
+                        <hr>
+                        <br>
+                        <h2 class="block-title">Заголовок 2</h2>
+                        <p>Институт проблем технологии микроэлектроники и&nbsp;особочистых материалов Российской академии наук (ИПТМ РАН) был создан в&nbsp;соответствии с&nbsp;постановлением ЦК&nbsp;КПСС и&nbsp;СМ от&nbsp;29&nbsp;мая 1983&nbsp;г. и постановлением Президиума АН&nbsp;СССР от&nbsp;29&nbsp;сентября 1983&nbsp;г. №1067 на&nbsp;базе подразделений Института физики твердого тела и&nbsp;начал функционировать с&nbsp;1&nbsp;января 1984&nbsp;г.</p>
+                        <hr>
+                        <br>
+                        <h2 class="block-title">Заголовок 3</h2>
+                        <p>Институт проблем технологии микроэлектроники и&nbsp;особочистых материалов Российской академии наук (ИПТМ РАН) был создан в&nbsp;соответствии с&nbsp;постановлением ЦК&nbsp;КПСС и&nbsp;СМ от&nbsp;29&nbsp;мая 1983&nbsp;г. и постановлением Президиума АН&nbsp;СССР от&nbsp;29&nbsp;сентября 1983&nbsp;г. №1067 на&nbsp;базе подразделений Института физики твердого тела и&nbsp;начал функционировать с&nbsp;1&nbsp;января 1984&nbsp;г.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-2 side-padding-0">
+                    <nav class="bg-grey">
+                        <ul class="nav inner-nav">
+                            <li><a href="#">Ссылка 1</a></li>
+                            <li><a href="#">Ссылка 2</a></li>
+                            <li><a href="#">Ещё одна ссылка</a></li>
+                            <li><a href="#">И тут ссылка тоже</a></li>
+                            <li><a href="#">Ссылка опять</a></li>
+                            <li><a href="#">Шестая ссылка</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="picture" class="tab-pane fade">
+            <div class="row bg-white no-top-border">
+
+                <div class="col-sm-10 side-padding-0">
+                    <div class="inner-block">
+                        <h2 class="block-title">Picture</h2>
+                        <p>Some content in menu 1.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-2 side-padding-0">
+                    <nav class="bg-grey">
+                        <ul class="nav inner-nav">
+                            <li><a href="#">Ссылка 1</a></li>
+                            <li><a href="#">Ссылка 2</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="textandpic" class="tab-pane fade">
+            <div class="row bg-white no-top-border">
+                <div class="inner-block">
+                    <h2 class="block-title">Text and pictures</h2>
+                    <p>Some content in menu 2.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="table" class="tab-pane fade">
+            <div class="row bg-white no-top-border">
+
+                <div class="col-sm-10 side-padding-0">
+                    <div class="inner-block">
+                        <h2 class="block-title">Table</h2>
+                        <p>Some content in menu 2.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-2 side-padding-0">
+                    <nav class="bg-grey">
+                        <ul class="nav inner-nav">
+                            <li><a href="#">Ссылка 1</a></li>
+                            <li><a href="#">Ссылка 2</a></li>
+                            <li><a href="#">Ссылка с очень длинным названием</a></li>
+                            <li><a href="#">Ссылка 4</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="allstuff" class="tab-pane fade">
+            <div class="row bg-white no-top-border">
+                <div class="inner-block">
+                    <h2 class="block-title">All stuff</h2>
+                    <p>Some content in menu 2.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </div>
 
 
