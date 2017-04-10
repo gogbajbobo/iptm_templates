@@ -288,6 +288,11 @@ ul.inner-nav a {
     color: var(--main-color) !important;
 }
 
+.side-padding-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 /*animation*/
 
