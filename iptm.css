@@ -103,7 +103,7 @@ h4 {
 }
 
 .jumbotron {
-    background-color: var(--main-color);
+    background-color: var(--main-gray-color);
     color: var(--add-color);
     padding: 50px 25px;
     font-size: 24px;
