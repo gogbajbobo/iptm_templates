@@ -2,6 +2,22 @@
  * Created by grimax on 16/03/2017.
  */
 
+@font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Play'), local('Play-Regular'), url(../fonts/Play-Regular.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Play Bold'), local('Play-Bold'), url(../fonts/Play-Bold.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
 :root {
     /*--main-color: #9869CA;*/
     /*--add-color: white;*/
