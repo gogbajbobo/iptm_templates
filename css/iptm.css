@@ -84,7 +84,7 @@ h4 {
 }
 
 .navbar {
-    font: 400 16px/1.8 Play, sans-serif;
+    font: 400 12px/1.8 Play, sans-serif;
     margin-bottom: 0;
     background-color: var(--main-color);
     z-index: 9999;
@@ -215,13 +215,13 @@ h4 {
 }
 
 footer .glyphicon {
-    font-size: 20px;
+    font-size: 12px;
     margin-bottom: 20px;
     /*color: var(--main-gray-color);*/
 }
 
 .footer {
-    font: 400 16px/1.8 Play, sans-serif;
+    font: 400 12px/1.8 Play, sans-serif;
     bottom: 0;
     width: 100%;
     height: 40px;
@@ -235,7 +235,7 @@ footer .glyphicon {
 
 .footer a {
     color: var(--add-color) !important;
-    padding: 20px 15px;
+    padding: 14px 15px;
     font-weight: 800;
 }
 
