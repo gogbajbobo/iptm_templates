@@ -386,4 +386,11 @@ ul.inner-nav a {
     .jumbotron h3 {
         font-size: 14px;
     }
+    ul.inner-nav a {
+        font-size: 14px;
+    }
+    .inner-block {
+        padding: 20px 30px;
+    }
+
 }
