@@ -5,7 +5,7 @@
 $(document).ready(function() {
 
     scrollToSection();
-    animateSelectedSection();
+    // animateSelectedSection();
     closeNavbarOnClick();
     spyForScrollSpy();
     
