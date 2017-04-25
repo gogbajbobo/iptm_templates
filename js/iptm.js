@@ -73,8 +73,15 @@ function closeNavbarOnClick() {
     // Закрываем меню после выбора
 
     $('.nav a').on('click', function() {
-        // $('.navbar-toggle').click();
+
+        let classNames = this.className.split(' ');
+
+        if (classNames.indexOf('dropdown-toggle') !== -1) {
+            return;
+        }
+
         $('.navbar-collapse').collapse('hide');
+
     });
 
 }
