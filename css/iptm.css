@@ -336,6 +336,18 @@ ul.inner-nav a {
     width: 100%;
 }
 
+ol.breadcrumb {
+    font: 400 12px/1.8 Play, sans-serif;
+}
+
+li > a {
+    color: var(--add-color) !important;
+}
+
+.selected-menu {
+    background-color: var(--main-gray-color);
+}
+
 /*animation*/
 
 /*.slideanim {*/
@@ -379,6 +391,9 @@ ul.inner-nav a {
     .col-sm-4 {
         text-align: center;
         margin: 25px 0;
+    }
+    .dropdown-menu {
+        font-size: 12px;
     }
 }
 
