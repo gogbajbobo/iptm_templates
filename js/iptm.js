@@ -8,6 +8,7 @@ $(document).ready(function() {
     // animateSelectedSection();
     closeNavbarOnClick();
     spyForScrollSpy();
+    disableFormSubmitButtons();
     
 });
 
@@ -82,6 +83,22 @@ function closeNavbarOnClick() {
 
         $('.navbar-collapse').collapse('hide');
 
+    });
+
+}
+
+function disableFormSubmitButtons() {
+
+    $.each($('.form-submit-button'), function (index, button) {
+        button.disabled = true;
+    });
+
+}
+
+function enableFormSubmitButton() {
+
+    $.each($('.form-submit-button'), function (index, button) {
+        button.disabled = false;
     });
 
 }
