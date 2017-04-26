@@ -95,10 +95,6 @@ function disableFormSubmitButtons() {
 
 }
 
-function enableFormSubmitButton() {
-
-    $.each($('.form-submit-button'), function (index, button) {
-        button.disabled = false;
-    });
-
+function enableMailFormSubmitButton() {
+    $('#mail-form-submit-button')[0].disabled = false;
 }

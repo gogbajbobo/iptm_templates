@@ -343,12 +343,12 @@ navbar — логотип, меню, кнопка входа, и кнопка-г
                     <textarea class="form-control" id="body" name="body" placeholder="Тест сообщения" rows="5"></textarea><br>
                     <div class="row">
                         <div class="col-sm-12 form-group">
-                            <div class="g-recaptcha pull-right" data-sitekey="6Lcvsx4UAAAAAJsQUiRU2J8y_ybLKYbSPHEoPx4P" data-callback="enableFormSubmitButton"></div>
+                            <div class="g-recaptcha pull-right" data-sitekey="6Lcvsx4UAAAAAJsQUiRU2J8y_ybLKYbSPHEoPx4P" data-callback="enableMailFormSubmitButton" data-expired-callback="disableFormSubmitButtons"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 form-group">
-                            <button class="btn btn-default pull-right form-submit-button" type="submit">Отправить</button>
+                            <button class="btn btn-default pull-right form-submit-button" id="mail-form-submit-button" type="submit">Отправить</button>
                         </div>
                     </div>
                 </div>
