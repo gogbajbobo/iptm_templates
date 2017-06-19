@@ -88,7 +88,7 @@ h4 {
 }
 
 .navbar li a, .navbar .navbar-brand {
-    color: var(--add-color) !important;
+    color: var(--heading-color) !important;
 }
 
 .navbar li a.dropdown-menu-item {
@@ -107,7 +107,7 @@ h4 {
 
 .navbar-default .navbar-toggle {
     border-color: transparent;
-    color: var(--add-color) !important;
+    color: var(--heading-color) !important;
 }
 
 .navbar-brand-logo {
@@ -115,13 +115,13 @@ h4 {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: var(--add-color);
+    background-color: var(--heading-color);
 }
 
 .jumbotron {
     font: 400 16px/1.8 Play, sans-serif;
     background-color: var(--main-gray-color);
-    color: var(--add-color);
+    color: var(--heading-color);
     padding: 20px 25px;
     font-size: 24px;
     text-transform: uppercase;
@@ -216,7 +216,7 @@ footer .glyphicon {
     width: 100%;
     height: 40px;
     background-color: var(--main-color);
-    color: var(--add-color);
+    color: var(--heading-color);
     padding: 10px;
     margin-right: auto;
     margin-left: auto;
@@ -224,7 +224,7 @@ footer .glyphicon {
 }
 
 .footer a {
-    color: var(--add-color) !important;
+    color: var(--heading-color) !important;
     padding: 14px 15px;
     font-weight: 800;
 }
@@ -312,7 +312,7 @@ footer .glyphicon {
 
 ul.inner-nav a {
     font: 400 12px/1.8 Play, sans-serif;
-    color: var(--add-color) !important;
+    color: var(--heading-color) !important;
 }
 
 .side-padding-0 {
@@ -329,7 +329,7 @@ ol.breadcrumb {
 }
 
 li > a {
-    color: var(--add-color) !important;
+    color: var(--heading-color) !important;
 }
 
 .selected-menu {
