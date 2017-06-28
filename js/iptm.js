@@ -5,6 +5,7 @@
 $(document).ready(function() {
 
     getFooter();
+    getModals();
 
     scrollToSection();
     closeNavbarOnClick();
@@ -15,6 +16,10 @@ $(document).ready(function() {
 
 function getFooter() {
     getHtmlChunk('footer');
+}
+
+function getModals() {
+    getHtmlChunk('modals');
 }
 
 function getHtmlChunk(name) {
