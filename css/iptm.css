@@ -159,10 +159,18 @@ h4 {
     min-height: 320px;
 }
 
+.science-thumbnail {
+    min-height: 0;
+}
+
 .thumbnail img {
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
+}
+
+.science-thumbnail img {
+    margin-bottom: 0;
 }
 
 .block-image img {
@@ -343,6 +351,10 @@ li > a {
 }
 
 #news > div > a {
+    margin: 10px 5px 10px;
+}
+
+#science > div > a {
     margin: 10px 5px 10px;
 }
 
