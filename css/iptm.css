@@ -362,6 +362,10 @@ li > a {
     padding: 10px 20px;
 }
 
+#iptmContacts input {
+    font-family: Play, sans-serif;
+}
+
 /*animation*/
 
 
