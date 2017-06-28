@@ -353,19 +353,12 @@ li > a {
     background-color: var(--main-gray-color);
 }
 
-#about > div > a {
+.info-section a {
     margin: 10px 5px 10px;
+    font-family: Play, sans-serif
 }
 
-#news > div > a {
-    margin: 10px 5px 10px;
-}
-
-#science > div > a {
-    margin: 10px 5px 10px;
-}
-
-#science > .bg-grey {
+#science .bg-grey {
     padding: 10px 20px;
 }
 
