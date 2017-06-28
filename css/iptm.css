@@ -163,6 +163,13 @@ h4 {
     min-height: 0;
 }
 
+.council-thumbnail {
+    min-height: 0;
+    max-height: 256px;
+    max-width: 256px;
+    margin: auto;
+}
+
 .thumbnail img {
     width: 100%;
     height: 100%;
@@ -356,6 +363,10 @@ li > a {
 
 #science > div > a {
     margin: 10px 5px 10px;
+}
+
+#science > .bg-grey {
+    padding: 10px 20px;
 }
 
 /*animation*/
