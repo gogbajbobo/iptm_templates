@@ -4,12 +4,27 @@
 
 $(document).ready(function() {
 
+    getFooter();
+
     scrollToSection();
     closeNavbarOnClick();
     spyForScrollSpy();
     disableFormSubmitButtons();
     
 });
+
+function getFooter() {
+
+    let path = 'footer.html';
+
+    $.get(path, function(data) {
+
+        let footer = $(data).filter('#iptm-footer');
+        $('#iptm-footer').replaceWith(footer);
+
+    });
+
+}
 
 function scrollToSection() {
 // Прокрутка к выбранному разделу
