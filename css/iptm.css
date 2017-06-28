@@ -342,6 +342,10 @@ li > a {
     margin: 10px 5px 10px;
 }
 
+#news > div > a {
+    margin: 10px 5px 10px;
+}
+
 /*animation*/
 
 /*.slideanim {*/
