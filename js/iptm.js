@@ -5,7 +5,6 @@
 $(document).ready(function() {
 
     scrollToSection();
-    // animateSelectedSection();
     closeNavbarOnClick();
     spyForScrollSpy();
     disableFormSubmitButtons();
@@ -33,27 +32,6 @@ function scrollToSection() {
 
     });
     
-}
-
-function animateSelectedSection() {
-    // Анимация при выборе раздела
-
-    $(window).scroll(function() {
-
-        $(".slideanim").each(function() {
-
-            let pos = $(this).offset().top;
-
-            let winTop = $(window).scrollTop();
-
-            if (pos < winTop + 600) {
-                $(this).addClass("slide");
-            }
-
-        });
-
-    });
-
 }
 
 function spyForScrollSpy() {
