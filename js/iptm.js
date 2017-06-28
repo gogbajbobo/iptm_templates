@@ -14,13 +14,17 @@ $(document).ready(function() {
 });
 
 function getFooter() {
+    getHtmlChunk('footer');
+}
 
-    let path = 'footer.html';
+function getHtmlChunk(name) {
+
+    let path = `${name}.html`;
 
     $.get(path, function(data) {
 
-        let footer = $(data).filter('#iptm-footer');
-        $('#iptm-footer').replaceWith(footer);
+        let chunk = $(data).filter(`#iptm-${name}`);
+        $(`#iptm-${name}`).replaceWith(chunk);
 
     });
 
