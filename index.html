@@ -422,54 +422,6 @@ navbar — логотип, меню, кнопка входа, и кнопка-г
 
 
 <!--
-Обратная связь
--->
-    <div id="contacts" class="container-fluid bg-grey">
-        <div class="row">
-            <div class="col-sm-10">
-                <h2 class="block-title">Обратная связь</h2>
-            </div>
-            <div class="col-sm-2">
-                <img src="images/postmark.gif">
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <form method="post" action="/mails.ru.html">
-                <div class="col-sm-8">
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="name" name="otpr_name" placeholder="Имя" type="text" required>
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="email" name="otpr_addr" placeholder="Email" type="email" required>
-                        </div>
-                    </div>
-                    <input class="form-control" id="subject" name="subj" placeholder="Тема" type="text" required><br>
-                    <textarea class="form-control" id="body" name="body" placeholder="Тест сообщения" rows="5"></textarea><br>
-                    <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <div class="g-recaptcha pull-right" data-sitekey="6Lcvsx4UAAAAAJsQUiRU2J8y_ybLKYbSPHEoPx4P" data-callback="enableMailFormSubmitButton" data-expired-callback="disableFormSubmitButtons"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <button class="btn btn-default pull-right form-submit-button" id="mail-form-submit-button" type="submit">Отправить</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            <div class="col-sm-4">
-                <p>Наши координаты:</p>
-                <p><span class="glyphicon glyphicon-map-marker"></span> 142432, Россия, Черноголовка, ул.&nbsp;Осипьяна,&nbsp;6</p>
-                <p><span class="glyphicon glyphicon-phone"></span> +7&nbsp;(495)&nbsp;962-80-74</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> general@iptm.ru</p>
-            </div>
-        </div>
-    </div>
-
-
-<!--
 Подвал
 -->
     <footer class="navbar-fixed-bottom footer">
@@ -483,7 +435,7 @@ navbar — логотип, меню, кнопка входа, и кнопка-г
                 </div>
                 <div class="col-xs-2 text-center">
                     <!--обратная связь-->
-                    <a href="#contacts">
+                    <a href="#" data-toggle="modal" data-target="#iptmContacts">
                         <span class="glyphicon glyphicon-envelope"></span>
                     </a>
                 </div>
@@ -500,6 +452,65 @@ navbar — логотип, меню, кнопка входа, и кнопка-г
 
 
 <!--Modals-->
+
+<!--Обратная связь-->
+    <div id="iptmContacts" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <form method="post" action="/mails.ru.html">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Обратная связь</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <div class="col-sm-12 form-group">
+                                        <input class="form-control" id="name" name="otpr_name" placeholder="Имя" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 form-group">
+                                        <input class="form-control" id="email" name="otpr_addr" placeholder="E-mail" type="email" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 form-group">
+                                        <input class="form-control" id="subject" name="subj" placeholder="Тема" type="text" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 hidden-xs">
+                                <img class="postmark" src="images/postmark.gif">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <textarea class="form-control" id="body" name="body" placeholder="Тест сообщения" rows="5"></textarea><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="g-recaptcha pull-right" data-sitekey="6Lcvsx4UAAAAAJsQUiRU2J8y_ybLKYbSPHEoPx4P" data-callback="enableMailFormSubmitButton" data-expired-callback="disableFormSubmitButtons"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Отменить</button>
+                        <button type="submit" class="btn btn-primary form-submit-button" id="mail-form-submit-button">Отправить</button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
 
 <!-- Поиск -->
     <div class="modal fade" id="iptmSearch" role="dialog">
