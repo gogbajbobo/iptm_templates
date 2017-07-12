@@ -19,7 +19,9 @@ function getFooter() {
 }
 
 function getModals() {
-    getHtmlChunk('modals');
+    getHtmlChunk('feedback');
+    getHtmlChunk('search');
+    getHtmlChunk('login');
 }
 
 function getHtmlChunk(name) {
