@@ -265,6 +265,15 @@ footer .glyphicon {
     background-color: var(--main-gray-color) !important;
 }
 
+#news .tab-content .row {
+    background-color: white;
+    /*height: 250px;*/
+}
+
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
+    margin: 0;
+}
+
 .news-list {
     margin-left: 5%;
     margin-right: 5%;

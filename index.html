@@ -203,24 +203,84 @@ navbar — логотип, меню, кнопка входа, и кнопка-г
 -->
 <div id="news" class="container-fluid text-center bg-grey info-section">
     <h2 class="block-title">Новости</h2>
-    <br>
-    <div class="row text-center">
-        <a href="#">Ученый&nbsp;совет</a>
-        <a href="#">Диссертационный&nbsp;совет</a>
-        <a href="#">Семинары</a>
-        <a href="#">Конференции</a>
-        <a href="#">Лента&nbsp;новостей</a>
+    <div class="row">
+        <ul class="nav nav-tabs nav-justified">
+            <li class="active"><a data-toggle="tab" href="#all-news">Лента&nbsp;новостей</a></li>
+            <li><a data-toggle="tab" href="#science-council">Ученый&nbsp;совет</a></li>
+            <li><a data-toggle="tab" href="#phd-council">Диссертационный&nbsp;совет</a></li>
+            <li><a data-toggle="tab" href="#seminars">Семинары</a></li>
+            <li><a data-toggle="tab" href="#conferences">Конференции</a></li>
+        </ul>
     </div>
-    <hr>
-    <div class="row text-left news-list">
-        <div><span>08/08/2017</span><a href="#">Заседание Учёного совета состоится 1 сентября 2017 г. в 11:00</a></div>
-        <div><span>01/07/2017</span><a href="#">По заданию партии и правительства все начинаем собираться в отпуск</a></div>
-        <div><span>07/06/2017</span><a href="#">Тут ещё одна новость про всякое другое уже</a></div>
-        <div><span>01/05/2017</span><a href="#">Новость про майские праздники, огороды, картошку и ваще</a></div>
-        <div><span>07/04/2017</span><a href="#">Тут какая-то новость про всякое</a></div>
-        <div><span>03/03/2017</span><a href="#">Заседание семинара «Рентгеновская оптика» состоится 6 июня 2017 г. в 16:00</a></div>
+    <div class="tab-content">
+
+        <div id="all-news" class="tab-pane active">
+            <div class="row no-top-border">
+
+                <div class="row text-left news-list inner-block">
+                    <div><span>08/08/2017</span><a href="#">Заседание Учёного совета состоится 1 сентября 2017 г. в 11:00</a></div>
+                    <div><span>01/07/2017</span><a href="#">По заданию партии и правительства все начинаем собираться в отпуск</a></div>
+                    <div><span>07/06/2017</span><a href="#">Тут ещё одна новость про всякое другое уже</a></div>
+                    <div><span>01/05/2017</span><a href="#">Новость про майские праздники, огороды, картошку и ваще</a></div>
+                    <div><span>07/04/2017</span><a href="#">Тут какая-то новость про всякое</a></div>
+                    <div><span>03/03/2017</span><a href="#">Заседание семинара «Рентгеновская оптика» состоится 6 июня 2017 г. в 16:00</a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="science-council" class="tab-pane">
+            <div class="row no-top-border">
+
+                <div class="row text-left news-list inner-block">
+                    <div><span>08/08/2017</span><a href="#">Заседание Учёного совета состоится 1 сентября 2017 г. в 11:00</a></div>
+                    <div><span>01/05/2017</span><a href="#">Очередная новость про заседание Учёного совета</a></div>
+                    <div><span>07/04/2017</span><a href="#">Ешё одна новость про заседание Учёного совета</a></div>
+                    <div><span>03/03/2017</span><a href="#">Новость про заседание Учёного совета</a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="phd-council" class="tab-pane">
+            <div class="row no-top-border">
+
+                <div class="row text-left news-list inner-block">
+                    <div><span>08/08/2017</span><a href="#">Заседание Диссертационного совета состоится 1 сентября 2017 г. в 11:00</a></div>
+                    <div><span>01/05/2017</span><a href="#">Очередная новость про заседание Диссертационного совета</a></div>
+                    <div><span>07/04/2017</span><a href="#">Ешё одна новость про заседание Диссертационного совета</a></div>
+                    <div><span>03/03/2017</span><a href="#">Новость про заседание Диссертационного совета</a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="seminars" class="tab-pane">
+            <div class="row no-top-border">
+
+                <div class="row text-left news-list inner-block">
+                    <div><span>01/07/2017</span><a href="#">Заседание семинара «Рентгеновская оптика» состоится 6 июля 2017 г. в 16:00</a></div>
+                    <div><span>07/06/2017</span><a href="#">Семинар «Физический» приглашает всех на доклад П.У.Пупкина «Жизнь после вчерашнего» 9 июня 2017 г. в 15:00</a></div>
+                    <div><span>01/05/2017</span><a href="#">Семинар «Химический» засядет 8 июня 2017 г. в 15:00 и будет заседать до 18:00</a></div>
+                    <div><span>07/04/2017</span><a href="#">А заседание семинара «Материаловедение и технология» состоится 7 июня 2017 г. в 16:00</a></div>
+                    <div><span>03/03/2017</span><a href="#">Заседание семинара «Рентгеновская оптика» состоится 6 июня 2017 г. в 16:00</a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="conferences" class="tab-pane">
+            <div class="row no-top-border">
+
+                <div class="row text-left news-list inner-block">
+                    <div><span>01/07/2017</span><a href="#">Тут новость про конференцию какую-нибудь забавную</a></div>
+                    <div><span>07/06/2017</span><a href="#">А тут новость про конференцию уже какую-нибудь серьёзную</a></div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
-    <hr>
     <div class="row text-center">
         <a class="btn btn-default btn-md" role="button" href="#">Архив&nbsp;новостей</a>
     </div>
