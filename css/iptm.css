@@ -274,6 +274,23 @@ footer .glyphicon {
     margin-bottom: 10px
 }
 
+.badge-item {
+    position: absolute;
+    top: 5px;
+    right: 45px;
+    display: inline-block;
+}
+.notify-badge {
+    position: absolute;
+    background: red;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color: white;
+    padding: 5px 19px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .row .is-flex {
     display: -webkit-box;
     display: -webkit-flex;
