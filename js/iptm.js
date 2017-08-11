@@ -11,6 +11,7 @@ $(document).ready(function() {
     closeNavbarOnClick();
     spyForScrollSpy();
     disableFormSubmitButtons();
+    showNotifyBadgeItems();
     
 });
 
@@ -101,4 +102,8 @@ function disableFormSubmitButtons() {
 
 function enableMailFormSubmitButton() {
     $('#mail-form-submit-button')[0].disabled = false;
+}
+
+function showNotifyBadgeItems() {
+    $(".notify-badge-item").prepend("<div class='badge-item'><span class='notify-badge'>!</span></div>");
 }
