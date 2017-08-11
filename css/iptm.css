@@ -265,6 +265,15 @@ footer .glyphicon {
     background-color: var(--main-gray-color) !important;
 }
 
+.news-list {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.news-list > div {
+    margin-bottom: 10px
+}
+
 .row .is-flex {
     display: -webkit-box;
     display: -webkit-flex;
