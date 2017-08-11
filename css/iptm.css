@@ -41,6 +41,10 @@ body {
     background-color: var(--bg-grey-color);
 }
 
+hr {
+    border-top: 1px solid #ddd;
+}
+
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
