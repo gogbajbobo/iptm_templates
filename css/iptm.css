@@ -270,6 +270,18 @@ footer .glyphicon {
     /*height: 250px;*/
 }
 
+#news li > a {
+    color: #337ab7 !important;
+}
+
+#news li > a:hover {
+    background-color: white;
+}
+
+#news li.active > a {
+    color: #818181 !important;
+}
+
 .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
     margin: 0;
 }
