@@ -123,6 +123,23 @@ h4 {
     background-color: var(--heading-color);
 }
 
+.dropdown-menu > li.level0 {
+    padding: 3px 20px;
+}
+
+.dropdown-menu > li.level1 {
+    padding: 3px 40px;
+}
+
+.dropdown-menu > li > a {
+    padding: 0;
+}
+
+li.level0 {
+    font-weight: normal;
+    /*color: var(--heading-color);*/
+}
+
 .jumbotron {
     font: 400 16px/1.8 Play, sans-serif;
     background-color: var(--main-gray-color);
@@ -464,13 +481,28 @@ li > a {
 }
 
 @media screen and (max-width: 768px) {
+
     .col-sm-4 {
         text-align: center;
         margin: 25px 0;
     }
+
     .dropdown-menu {
         font-size: 12px;
     }
+
+    .dropdown-menu > li.level0 {
+        padding: 5px 30px;
+    }
+
+    .dropdown-menu > li.level1 {
+        padding: 5px 50px;
+    }
+
+    .navbar-nav .open .dropdown-menu>li>a {
+        padding: 0;
+    }
+
 }
 
 @media (max-width: 600px) {
