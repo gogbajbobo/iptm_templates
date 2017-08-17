@@ -524,3 +524,30 @@ li > a {
     }
 
 }
+
+.multi-item {
+    padding: 10px;
+}
+
+.multi-item .block-image {
+    padding-top: 10px;
+}
+
+.item-row-title {
+    font-weight: bold;
+    /*font-style: italic;*/
+    /*text-decoration: underline;*/
+    padding-right: 5px;
+}
+
+.item-reporter {
+    padding: 10px 0px;
+}
+
+.item-author {
+    margin-top: -10px;
+}
+
+.item-annotation {
+    padding-top: 15px;
+}
