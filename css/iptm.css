@@ -551,3 +551,8 @@ li > a {
 .item-annotation {
     padding-top: 15px;
 }
+
+.pager li > a, .pager li > span {
+    padding: 10px 15px;
+    border-radius: 20px;
+}
