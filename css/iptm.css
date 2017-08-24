@@ -565,3 +565,18 @@ li > a {
 .archive-item span {
     padding-right: 5px;
 }
+
+.pagination li > a, .pagination li > span {
+    font-family: Play, sans-serif;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: #fff;
+    border-color: #ddd;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.pagination > .disabled > a > span {
+    color: #ddd;
+}
