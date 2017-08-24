@@ -556,3 +556,11 @@ li > a {
     padding: 10px 15px;
     border-radius: 20px;
 }
+
+.archive-item {
+    padding: 10px;
+}
+
+.archive-item span {
+    padding-right: 5px;
+}
