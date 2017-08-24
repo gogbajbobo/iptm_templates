@@ -553,7 +553,7 @@ li > a {
 }
 
 .pager li > a, .pager li > span {
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 20px;
     font-family: Play, sans-serif;
 }
