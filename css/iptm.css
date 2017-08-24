@@ -552,6 +552,10 @@ li > a {
     padding-top: 15px;
 }
 
+.event-doc {
+    padding: 10px 20px;
+}
+
 .pager li > a, .pager li > span {
     padding: 10px;
     border-radius: 20px;
