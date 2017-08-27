@@ -552,6 +552,10 @@ li > a {
     padding-top: 15px;
 }
 
+.item-additions a {
+    display: block;
+}
+
 .event-doc {
     padding: 10px 20px;
 }
