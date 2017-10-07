@@ -589,12 +589,11 @@ li > a {
     color: #ddd;
 }
 
-.image-in-modal-body > img {
+.image-in-modal-body img {
     display: block;
     max-width:75vw;
     max-height:50vh;
     width: auto;
     height: auto;
     margin: auto;
-    /*height: 50vh;*/
 }

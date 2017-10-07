@@ -116,8 +116,14 @@ function showNotifyBadgeItems() {
 function modalDocLinks() {
 
     const modalImages = {
-        "#iptm-modaldoc": "1.jpg",
-        "#iptm-modaldocland": "1land.jpg"
+        "#iptm-modaldoc": {
+            imageUrl: "images/1.jpg",
+            linkUrl: "#"
+        },
+        "#iptm-modaldocland": {
+            imageUrl: "images/1land.jpg",
+            linkUrl: "#"
+        }
     };
 
     $.each($('.modaldoc-link'), (index, link) => {
@@ -126,10 +132,11 @@ function modalDocLinks() {
 
             const modalId = $(link).attr('data-target');
             const divWithImage = $(`${modalId} .image-in-modal-body:first`);
-            $(divWithImage).append(`<img src="images/${modalImages[modalId]}">`);
-            console.log(divWithImage);
 
+            if (divWithImage.contents().length) return;
 
+            const {linkUrl, imageUrl} = modalImages[modalId];
+            $(divWithImage).append(`<a href="${linkUrl}"><img src="${imageUrl}"></a>`);
 
         };
 
