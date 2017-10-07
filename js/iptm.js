@@ -12,7 +12,8 @@ $(document).ready(() => {
     spyForScrollSpy();
     disableFormSubmitButtons();
     showNotifyBadgeItems();
-    
+    modalDocLinks();
+
 });
 
 function getFooter() {
@@ -21,7 +22,7 @@ function getFooter() {
 
 function getModals() {
 
-    let modals = ['feedback', 'search', 'login', 'modaldoc', 'modaldocland'];
+    const modals = ['feedback', 'search', 'login', 'modaldoc', 'modaldocland', 'modaldoc-nojs'];
 
     modals.forEach(modal => {
         getHtmlChunk(modal);
@@ -110,4 +111,28 @@ function enableMailFormSubmitButton() {
 
 function showNotifyBadgeItems() {
     $(".notify-badge-item").prepend("<div class='badge-item'><span class='notify-badge'>!</span></div>");
+}
+
+function modalDocLinks() {
+
+    const modalImages = {
+        "#iptm-modaldoc": "1.jpg",
+        "#iptm-modaldocland": "1land.jpg"
+    };
+
+    $.each($('.modaldoc-link'), (index, link) => {
+
+        link.onclick = () => {
+
+            const modalId = $(link).attr('data-target');
+            const divWithImage = $(`${modalId} .image-in-modal-body:first`);
+            $(divWithImage).append(`<img src="images/${modalImages[modalId]}">`);
+            console.log(divWithImage);
+
+
+
+        };
+
+    });
+
 }
