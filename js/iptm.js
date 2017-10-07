@@ -45,7 +45,7 @@ function getHtmlChunk(name) {
 function scrollToSection() {
 // Прокрутка к выбранному разделу
 
-    $(".navbar a, footer a[href='#iptmPage']").on('click', event => {
+    $(".navbar a, footer a[href='#iptmPage']").on('click', function(event) {
 
         if (this.hash !== "") {
 
@@ -82,7 +82,7 @@ function spyForScrollSpy() {
 function closeNavbarOnClick() {
     // Закрываем меню после выбора
 
-    $('.nav a').on('click', () => {
+    $('.nav a').on('click', function() {
 
         let classNames = this.className.split(' ');
 
