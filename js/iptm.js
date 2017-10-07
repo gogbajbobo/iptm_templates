@@ -118,7 +118,7 @@ function modalDocLinks() {
     const modalImages = {
         "#iptm-modaldoc": {
             imageUrl: "images/1.jpg",
-            linkUrl: "#"
+            linkUrl: "seminar1.html"
         },
         "#iptm-modaldocland": {
             imageUrl: "images/1land.jpg",
