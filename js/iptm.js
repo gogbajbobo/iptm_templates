@@ -21,7 +21,7 @@ function getFooter() {
 
 function getModals() {
 
-    let modals = ['feedback', 'search', 'login', 'modaldoc'];
+    let modals = ['feedback', 'search', 'login', 'modaldoc', 'modaldocland'];
 
     modals.forEach(modal => {
         getHtmlChunk(modal);
