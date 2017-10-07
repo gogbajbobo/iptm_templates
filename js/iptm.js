@@ -2,7 +2,7 @@
  * Created by grimax on 28/03/2017.
  */
 
-$(document).ready(function() {
+$(document).ready(() => {
 
     getFooter();
     getModals();
@@ -29,7 +29,7 @@ function getHtmlChunk(name) {
 
     let path = `${name}.html`;
 
-    $.get(path, function(data) {
+    $.get(path, data => {
 
         let chunk = $(data).filter(`#iptm-${name}`);
         $(`#iptm-${name}`).replaceWith(chunk);
@@ -41,7 +41,7 @@ function getHtmlChunk(name) {
 function scrollToSection() {
 // Прокрутка к выбранному разделу
 
-    $(".navbar a, footer a[href='#iptmPage']").on('click', function(event) {
+    $(".navbar a, footer a[href='#iptmPage']").on('click', event => {
 
         if (this.hash !== "") {
 
@@ -64,7 +64,7 @@ function scrollToSection() {
 function spyForScrollSpy() {
     // Показываем заголовок раздела в навбаре на телефоне
 
-    $('body').on('activate.bs.scrollspy', function () {
+    $('body').on('activate.bs.scrollspy', () => {
 
         let navbarMenu = $('#menu-navbar');
         let activeMenuItem = navbarMenu.children('li.active');
@@ -78,7 +78,7 @@ function spyForScrollSpy() {
 function closeNavbarOnClick() {
     // Закрываем меню после выбора
 
-    $('.nav a').on('click', function() {
+    $('.nav a').on('click', () => {
 
         let classNames = this.className.split(' ');
 
@@ -94,7 +94,7 @@ function closeNavbarOnClick() {
 
 function disableFormSubmitButtons() {
 
-    $.each($('.form-submit-button'), function (index, button) {
+    $.each($('.form-submit-button'), (index, button) => {
         button.disabled = true;
     });
 
