@@ -20,9 +20,13 @@ function getFooter() {
 }
 
 function getModals() {
-    getHtmlChunk('feedback');
-    getHtmlChunk('search');
-    getHtmlChunk('login');
+
+    let modals = ['feedback', 'search', 'login', 'modaldoc'];
+
+    modals.forEach(modal => {
+        getHtmlChunk(modal);
+    });
+
 }
 
 function getHtmlChunk(name) {
