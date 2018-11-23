@@ -1,0 +1,253 @@
+<!--Created by grimax on 16/03/2017.-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="imt_SiteTitle">IMT RAS Inner Page Dropmenu 5</title>
+
+    <!--fonts now loading locally, see iptm.css-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Play:regular,bold" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">-->
+
+    <!--load bootstrap css from cdn-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+
+    <!--load bootstrap css locally-->
+    <!--downloaded from http://getbootstrap.com/getting-started/#download "Compiled and minified CSS, JavaScript, and fonts"-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/iptm.css">
+
+    <!--load jquery js from cdn-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+    <!--load jquery js locally-->
+    <!--downloaded from https://code.jquery.com/jquery/-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!--load bootstrap js from cdn-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+    <!--load bootstrap js locally-->
+    <!--downloaded from http://getbootstrap.com/getting-started/#download "Compiled and minified CSS, JavaScript, and fonts"-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/iptm.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
+    <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+
+    <!--use libraries locally-->
+    <!--downloaded from https://github.com/aFarkas/html5shiv/releases and https://github.com/scottjehl/Respond/releases-->
+
+    <!--[if lt IE 9]>
+
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <![endif]-->
+
+    <script src="https://www.google.com/recaptcha/api.js?hl=ru" async defer></script>
+
+</head>
+<body id="iptmPage">
+
+<!--
+navbar — логотип, меню, кнопка входа, и кнопка-гамбургер, появляющаяся при коллапсе меню
+-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!--логотип-->
+            <a class="navbar-brand navbar-brand-logo" href="index.html">
+                <!--<img src="images/iptm_logo_inverse_small.png">-->
+                <img src="images/iptm_logo_small.png">
+            </a>
+            <a class="navbar-brand visible-xs" id="infotext-navbar">Раздел 3</a>
+            <!--кнопка-гамбургер-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!--схлопывающееся меню-->
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <!--основное меню — прижато влево-->
+            <ul class="nav navbar-nav">
+                <li><a href="#text">Раздел 1</a></li>
+                <li><a href="#table">Раздел 2</a></li>
+                <li class="dropdown selected-menu">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Раздел 3
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dropmenu1.html">Текст</a></li>
+                        <li><a href="dropmenu2.html">Картинка</a></li>
+                        <li><a href="dropmenu3.html">Текст с картинками</a></li>
+                        <li><a href="dropmenu4.html">Таблица</a></li>
+                        <li class="active"><a href="dropmenu5.html">Всё вместе</a></li>
+                    </ul>
+                </li>
+                <li><a href="#textWithPicture">Раздел 4</a></li>
+                <li><a href="#all">Раздел 5</a></li>
+            </ul>
+            <!--втростепенное меню — прижато вправо-->
+            <ul class="nav navbar-nav navbar-right">
+                <!--вход-->
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#iptm-login">Вход <span class="glyphicon glyphicon-log-in"></span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid inner-block">
+
+    <div class="row">
+        <div class="col-sm-10">
+
+            <div class="row">
+                <ol class="breadcrumb">
+                    <li><a href="dropmenu.html">Раздел 3</a></li>
+                    <li class="active">Всё вместе</li>
+                </ol>
+            </div>
+
+            <div class="tab-content">
+
+                <div id="allstuff" class="tab-pane fade in active">
+                    <div class="row bg-white no-top-border">
+
+                        <div class="inner-block">
+                            <div class="row">
+
+                                <div class="col-xs-1">
+
+                                    <div class="btn-group btn-group-sm btn-group-vertical alphabet">
+                                        <a href="#" class="btn btn-default active">А</a>
+                                        <a href="#" class="btn btn-default" disabled>Б</a>
+                                        <a href="#" class="btn btn-default">В</a>
+                                        <a href="#" class="btn btn-default">Г</a>
+                                        <a href="#" class="btn btn-default" disabled>Д</a>
+                                        <a href="#" class="btn btn-default" disabled>Е</a>
+                                        <a href="#" class="btn btn-default">Ж</a>
+                                        <a href="#" class="btn btn-default">З</a>
+                                        <a href="#" class="btn btn-default">И</a>
+                                        <a href="#" class="btn btn-default">К</a>
+                                        <a href="#" class="btn btn-default">Л</a>
+                                        <a href="#" class="btn btn-default">М</a>
+                                        <a href="#" class="btn btn-default">Н</a>
+                                        <a href="#" class="btn btn-default" disabled>О</a>
+                                        <a href="#" class="btn btn-default">П</a>
+                                        <a href="#" class="btn btn-default">Р</a>
+                                        <a href="#" class="btn btn-default">С</a>
+                                        <a href="#" class="btn btn-default">Т</a>
+                                        <a href="#" class="btn btn-default">У</a>
+                                        <a href="#" class="btn btn-default">Ф</a>
+                                        <a href="#" class="btn btn-default">Х</a>
+                                        <a href="#" class="btn btn-default">Ц</a>
+                                        <a href="#" class="btn btn-default">Ч</a>
+                                        <a href="#" class="btn btn-default" disabled>Ш</a>
+                                        <a href="#" class="btn btn-default" disabled>Щ</a>
+                                        <a href="#" class="btn btn-default" disabled>Э</a>
+                                        <a href="#" class="btn btn-default">Ю</a>
+                                        <a href="#" class="btn btn-default">Я</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-xs-10">
+
+                                    <div class="list-group staff-list">
+
+                                        <div class="list-group-item">
+                                            <h4 class="list-group-item-heading">
+                                                <a href="#" title="Узнать всё, что скрыто">
+                                                    <span>Иванов Иван Иванович</span>
+                                                </a>
+                                                <a href="mailto:#" title="Написать письмецо">
+                                                    <span class="glyphicon glyphicon-envelope"></span>
+                                                </a>
+                                            </h4>
+                                            <p class="list-group-item-text">Околонаучный сотрудник, живёт и работает в лесу, налогов не платит</p>
+                                        </div>
+
+                                        <div class="list-group-item">
+                                            <h4 class="list-group-item-heading">
+                                                <a href="#" title="Узнать всё, что скрыто">
+                                                    <span>Петров Пётр Петрович</span>
+                                                </a>
+                                                <a href="mailto:#" title="Написать письмецо">
+                                                    <span class="glyphicon glyphicon-envelope"></span>
+                                                </a>
+                                            </h4>
+                                            <p class="list-group-item-text">Сверхнаучный сотрудник, не живёт и не работает, существование под вопросом</p>
+                                        </div>
+
+                                        <div class="list-group-item">
+                                            <h4 class="list-group-item-heading">
+                                                <a href="#" title="Узнать всё, что скрыто">
+                                                    <span>Николаев Николай Николаевич</span>
+                                                </a>
+                                                <a href="mailto:#" title="Написать письмецо">
+                                                    <span class="glyphicon glyphicon-envelope"></span>
+                                                </a>
+                                            </h4>
+                                            <p class="list-group-item-text">Слесарных дел мастер, единственный полезный человек</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-2 hidden-xs">
+
+            <nav class="bg-grey affix">
+                <ul class="nav inner-nav">
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="col-sm-2 visible-xs">
+
+            <nav class="bg-grey">
+                <ul class="nav inner-nav">
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!--
+Подвал
+-->
+<div id="iptm-footer"></div>
+
+
+<!--Modals-->
+<div id="iptm-modals">
+    <div id="iptm-feedback"></div>
+    <div id="iptm-search"></div>
+    <div id="iptm-login"></div>
+</div>
+
+
+</body>
+</html>

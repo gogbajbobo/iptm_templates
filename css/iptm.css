@@ -597,3 +597,11 @@ li > a {
     height: auto;
     margin: auto;
 }
+
+.alphabet {
+    margin-left: -15px;
+}
+
+.staff-list a {
+    padding-right: 10px;
+}
