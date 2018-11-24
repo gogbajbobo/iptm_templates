@@ -1,7 +1,12 @@
 :root {
+
     --main-color: white;
     --heading-color: #9869CA;
     --main-gray-color: #EFEEFE;
     --bg-grey-color: #f6f6f6;
+
+    --link-color: #337ab7;
+
     --max-width: 1024px;
+
 }
