@@ -14,6 +14,7 @@ $(document).ready(() => {
     showNotifyBadgeItems();
     modalDocLinks();
     // loadEmails();
+    loadBunchOfEmails();
 
 });
 
@@ -155,3 +156,34 @@ function loadEmails() {
 
 }
 
+function loadBunchOfEmails() {
+
+    // POST request with array of id values
+    // in success callback we expect json string of object like this: { '1': 'user1@example.com', '2': 'user2@example.com' }
+
+    const ids = $.map($('a.user-email'), (value) => value.id);
+
+    $.ajax({
+        url: './api-bunch-of-emails-by-ids.php',
+        data: JSON.stringify(ids),
+        contentType: 'application/json',
+        method: 'POST',
+        success: result => {
+
+            const res = JSON.parse(result);
+
+            Object.keys(res).forEach(key => {
+                $(`a.user-email#${ key }`).attr('href', `mailto:${ res[key] }`)
+            });
+
+        },
+        error: () => {
+
+            $.each($('a.user-email'), (index, link) => {
+                $(link).attr('href', '#')
+            });
+
+        }
+    });
+
+}
