@@ -13,6 +13,7 @@ $(document).ready(() => {
     disableFormSubmitButtons();
     showNotifyBadgeItems();
     modalDocLinks();
+    // loadEmails();
 
 });
 
@@ -132,3 +133,25 @@ function modalDocLinks() {
     });
 
 }
+
+function loadEmails() {
+
+    // GET request url will look like this: ./api-email-by-id.php?id=1
+    // in success callback we expect string with email value
+
+    $.each($('a.user-email'), (index, link) => {
+
+        const { id } = link;
+
+        $.ajax({
+            url: './api-email-by-id.php',
+            data: { id },
+            method: 'GET',
+            success: email => $(link).attr('href', `mailto:${ email }`),
+            error: () => $(link).attr('href', '#')
+        });
+
+    });
+
+}
+
