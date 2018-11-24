@@ -63,7 +63,7 @@ function scrollToSection() {
         }
 
     });
-    
+
 }
 
 function spyForScrollSpy() {
