@@ -613,3 +613,7 @@ li > a {
 .staff-list a {
     padding-right: 10px;
 }
+
+.person-item-text {
+    padding: 4px 10px;
+}
