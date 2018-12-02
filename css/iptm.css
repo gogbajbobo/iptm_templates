@@ -598,6 +598,26 @@ li > a {
     margin: auto;
 }
 
+.staff-persons {
+    font-family: Play, sans-serif;
+}
+
+.staff-persons .nav-pills>li {
+    margin-left: -10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.staff-persons .nav-pills>li.disabled>a {
+    color: lightgray !important;
+}
+
+.staff-persons .nav-pills>li.active>a, 
+.staff-persons .nav-pills>li.active>a:focus, 
+.staff-persons .nav-pills>li.active>a:hover {
+    color: var(--main-color) !important;
+}
+
 .alphabet {
     margin-left: -15px;
 }
@@ -616,4 +636,11 @@ li > a {
 
 .person-item-text {
     padding: 4px 10px;
+}
+
+@media (max-width: 600px) {
+    .staff-persons .nav-pills>li>a {
+        padding-left: 5px;
+        padding-right: 25px;
+    }
 }
