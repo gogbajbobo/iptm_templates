@@ -4,8 +4,8 @@
 
 $(document).ready(() => {
 
-    getFooter();
-    getModals();
+    // getFooter();
+    // getModals();
 
     scrollToSection();
     closeNavbarOnClick();
