@@ -4,14 +4,15 @@
 раздел новостей
 -->
 <div id="myCarousel" class="carousel slide text-center bg-white" data-ride="carousel">
-    <!-- Индикаторы (число индикаторов должно соответствовать числу новостей)-->
+
     <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
+
+        {foreach $news_lines as $news}
+
+            <li data-target="#myCarousel" data-slide-to="{$news@index}" {if $news@first}class="active"{/if}></li>
+
+        {/foreach}
+
     </ol>
 
     <!-- Слайды с заголовками новостей -->
@@ -40,4 +41,5 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
+
 </div>
