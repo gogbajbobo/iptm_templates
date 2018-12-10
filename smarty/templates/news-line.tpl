@@ -27,7 +27,7 @@
                 </h5>
             </div>
             
-        {/foreach}}
+        {/foreach}
 
     </div>
 
