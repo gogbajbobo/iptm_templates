@@ -233,7 +233,8 @@ li.level0 {
 }
 
 .carousel-indicators li {
-    border-color: var(--main-color);
+    border-color: var(--main-gray-color);
+    background-color: var(--bg-grey-color);
 }
 
 .carousel-indicators li.active {
