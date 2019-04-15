@@ -413,8 +413,8 @@ ul.inner-nav a {
 }
 
 .side-padding-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .inner-block > img {
@@ -613,8 +613,8 @@ li > a {
     color: lightgray !important;
 }
 
-.staff-persons .nav-pills>li.active>a, 
-.staff-persons .nav-pills>li.active>a:focus, 
+.staff-persons .nav-pills>li.active>a,
+.staff-persons .nav-pills>li.active>a:focus,
 .staff-persons .nav-pills>li.active>a:hover {
     color: var(--main-color) !important;
 }
