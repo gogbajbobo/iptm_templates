@@ -1,0 +1,513 @@
+<!--Created by grimax on 16/03/2017.-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="imt_SiteTitle">IMT RAS Inner Page AntiCorruption Info</title>
+
+    <!--fonts now loading locally, see iptm.css-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Play:regular,bold" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">-->
+
+    <!--load bootstrap css from cdn-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+
+    <!--load bootstrap css locally-->
+    <!--downloaded from http://getbootstrap.com/getting-started/#download "Compiled and minified CSS, JavaScript, and fonts"-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/iptm.css">
+
+    <!--load jquery js from cdn-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+    <!--load jquery js locally-->
+    <!--downloaded from https://code.jquery.com/jquery/-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!--load bootstrap js from cdn-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+    <!--load bootstrap js locally-->
+    <!--downloaded from http://getbootstrap.com/getting-started/#download "Compiled and minified CSS, JavaScript, and fonts"-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/iptm.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
+    <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+
+    <!--use libraries locally-->
+    <!--downloaded from https://github.com/aFarkas/html5shiv/releases and https://github.com/scottjehl/Respond/releases-->
+
+    <!--[if lt IE 9]>
+
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <![endif]-->
+
+    <script src="https://www.google.com/recaptcha/api.js?hl=ru" async defer></script>
+
+</head>
+<body id="iptmPage">
+
+<!--
+navbar — логотип, меню, кнопка входа, и кнопка-гамбургер, появляющаяся при коллапсе меню
+-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!--логотип-->
+            <a class="navbar-brand navbar-brand-logo" href="index.html">
+                <!--<img src="images/iptm_logo_inverse_small.png">-->
+                <img src="images/iptm_logo_small.png">
+            </a>
+            <a class="navbar-brand visible-xs" id="infotext-navbar">Раздел 3</a>
+            <!--кнопка-гамбургер-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!--схлопывающееся меню-->
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <!--основное меню — прижато влево-->
+            <ul class="nav navbar-nav">
+                <li><a href="#text">Раздел 1</a></li>
+                <li><a href="#table">Раздел 2</a></li>
+                <li class="dropdown selected-menu">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Раздел 3
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dropmenu1.html">Текст</a></li>
+                        <li><a href="dropmenu2.html">Картинка</a></li>
+                        <li><a href="dropmenu3.html">Текст с картинками</a></li>
+                        <li><a href="dropmenu4.html">Таблица</a></li>
+                        <li class="active"><a href="dropmenu5.html">Всё вместе</a></li>
+                    </ul>
+                </li>
+                <li><a href="#textWithPicture">Раздел 4</a></li>
+                <li><a href="#all">Раздел 5</a></li>
+            </ul>
+            <!--втростепенное меню — прижато вправо-->
+            <ul class="nav navbar-nav navbar-right">
+                <!--вход-->
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#iptm-login">Вход <span class="glyphicon glyphicon-log-in"></span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid inner-block">
+
+    <div class="row">
+        <div>
+
+            <div class="row">
+                <ol class="breadcrumb">
+                    <li><a href="dropmenu.html">Противодействие коррупции</a></li>
+                    <li class="active">Сведения о доходах, расходах, об имуществе и обязательствах имущественного характера</li>
+                </ol>
+            </div>
+
+            <div class="tab-content">
+
+                <div id="anticorrupt" class="tab-pane fade in active">
+                    <div class="row bg-white no-top-border">
+                        <div class="inner-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h2 class="block-title">Сведения о доходах, расходах, об имуществе и обязательствах имущественного характера</h2>
+                                    <h5>за период с 1 января 2019 г. по 31 декабря 2019 г.</h5>
+                                </div>
+                            </div>
+                            <div class="row table-responsive">
+
+                                <table class="table table-bordered table-condensed">
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2">N п/п</td>
+                                            <td rowspan="2">Фамилия и инициалы лица,<br>чьи сведения размещаются</td>
+                                            <td rowspan="2">Должность</td>
+                                            <td colspan="4">Объекты недвижимости, находящиеся в собственности</td>
+                                            <td colspan="3">Объекты недвижимости, находящиеся в пользовании</td>
+                                            <td rowspan="2">Транспортные средства (вид, марка)</td>
+                                            <td rowspan="2">Декларированный годовой доход (руб.)</td>
+                                            <td rowspan="2">Сведения об источниках получения средств, за счет которых совершена сделка
+                                            (вид приобретенного имущества, источники)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>вид объекта</td>
+                                            <td>вид собственности</td>
+                                            <td>площадь (кв. м)</td>
+                                            <td>страна расположения</td>
+                                            <td>вид объекта</td>
+                                            <td>площадь (кв. м)</td>
+                                            <td>страна расположения</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="6">1.</td>
+                                            <td rowspan="4">Пупкин А.А.</td>
+                                            <td rowspan="4">Директор</td>
+                                            <td>земельный участок</td>
+                                            <td>индивидуальная</td>
+                                            <td>123456,00</td>
+                                            <td>Россия</td>
+                                            <td rowspan="4">нет</td>
+                                            <td rowspan="4">-</td>
+                                            <td rowspan="4">-</td>
+                                            <td rowspan="4">нет</td>
+                                            <td rowspan="4">100 000 000,00</td>
+                                            <td rowspan="4">нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>жилой дом</td>
+                                            <td>индивидуальная</td>
+                                            <td>555,5</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td>квартира</td>
+                                            <td>индивидуальная</td>
+                                            <td>77,7</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td>квартира</td>
+                                            <td>индивидуальная</td>
+                                            <td>1,1</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">супруга</td>
+                                            <td rowspan="2">-</td>
+                                            <td>земельный участок</td>
+                                            <td>индивидуальная</td>
+                                            <td>14,00</td>
+                                            <td>Россия</td>
+                                            <td rowspan="2">нет</td>
+                                            <td rowspan="2">-</td>
+                                            <td rowspan="2">-</td>
+                                            <td rowspan="2">автомобиль легковой большой и красивый</td>
+                                            <td rowspan="2">1 400,61</td>
+                                            <td rowspan="2">нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>жилой дом</td>
+                                            <td>индивидуальная</td>
+                                            <td>1980,4</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="8">2</td>
+                                            <td rowspan="3">Пупкин А.Б.</td>
+                                            <td rowspan="3">Заместитель директора</td>
+                                            <td>земельный участок</td>
+                                            <td>Общая совместная</td>
+                                            <td>100500,00</td>
+                                            <td>Россия</td>
+                                            <td rowspan="3">нет</td>
+                                            <td rowspan="3">-</td>
+                                            <td rowspan="3">-</td>
+                                            <td rowspan="3">нет</td>
+                                            <td rowspan="3">9 999 999,99</td>
+                                            <td rowspan="3">Нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>земельный участок</td>
+                                            <td>Общая совместная</td>
+                                            <td>2000,00</td>
+                                            <td>Россия</td></tr><tr>
+                                            <td>квартира</td>
+                                            <td>индивидуальная</td>
+                                            <td>460,5</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">супруга</td>
+                                            <td rowspan="2">-</td>
+                                            <td>земельный участок</td>
+                                            <td>Общая совместная</td>
+                                            <td>10,00</td>
+                                            <td>Россия</td>
+                                            <td>Квартира</td>
+                                            <td>4,5</td>
+                                            <td>Россия</td>
+                                            <td rowspan="2">легковой автомобиль 2009 г.в.</td>
+                                            <td rowspan="2">111 111,11</td>
+                                            <td rowspan="2">Нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>земельный участок</td>
+                                            <td>Общая совместная</td>
+                                            <td>2200,00</td>
+                                            <td>Россия</td>
+                                            <td>Квартира</td>
+                                            <td>724,0</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">несовершеннолетний ребенок</td>
+                                            <td rowspan="3">-</td>
+                                            <td rowspan="3">нет</td>
+                                            <td rowspan="3">нет</td>
+                                            <td rowspan="3">нет</td>
+                                            <td rowspan="3">нет</td>
+                                            <td>земельный участок</td>
+                                            <td>100,00</td>
+                                            <td>Россия</td>
+                                            <td rowspan="3">нет</td>
+                                            <td rowspan="3">нет</td>
+                                            <td rowspan="3">нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>земельный участок</td>
+                                            <td>20,00</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td>квартира</td>
+                                            <td>465,5</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="5">3.</td>
+                                            <td rowspan="3">Пупкин А.В.</td>
+                                            <td rowspan="3">заместитель директора</td>
+                                            <td rowspan="3">нет</td>
+                                            <td rowspan="3">-</td>
+                                            <td rowspan="3">-</td>
+                                            <td rowspan="3">-</td>
+                                            <td>квартира</td>
+                                            <td>435,6</td>
+                                            <td>Россия</td>
+                                            <td>автомобиль легковой жип</td>
+                                            <td rowspan="3">1 123 123,12</td>
+                                            <td rowspan="3">нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>гараж</td>
+                                            <td>12,9</td>
+                                            <td>Россия</td>
+                                            <td>автомобиль легковой</td>
+                                        </tr>
+                                        <tr>
+                                            <td>гараж</td>
+                                            <td>1,9</td>
+                                            <td>Россия</td>
+                                            <td>автомобиль легковой</td>
+                                        </tr>
+                                        <tr>
+                                            <td>супруга</td>
+                                            <td>-</td>
+                                            <td>нет</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>квартира</td>
+                                            <td>424,0</td>
+                                            <td>Россия</td>
+                                            <td>нет</td>
+                                            <td>49 380,14</td>
+                                            <td>нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>несовершеннолетний ребенок</td>
+                                            <td>-</td>
+                                            <td>нет</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>квартира</td>
+                                            <td>434,0</td>
+                                            <td>Россия</td>
+                                            <td>нет</td>
+                                            <td>нет</td>
+                                            <td>нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="12">4.</td>
+                                            <td rowspan="4">Пупкина А.Г.</td>
+                                            <td rowspan="4">главный бухгалтер</td>
+                                            <td>жилой дом</td>
+                                            <td>общая долевая, 1/134</td>
+                                            <td>0,3</td>
+                                            <td>Россия</td>
+                                            <td rowspan="4">квартира</td>
+                                            <td rowspan="4">434,7</td>
+                                            <td rowspan="4">Россия</td>
+                                            <td rowspan="4">нет</td>
+                                            <td rowspan="4">1 000 000,85</td>
+                                            <td rowspan="4">нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>земельный участок</td>
+                                            <td>общая долевая, 1/16</td>
+                                            <td>8,00</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td>объект незавершенного строительства (по проекту жилой дом)</td>
+                                            <td>индивидуальная</td>
+                                            <td>5,4</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td>земельный участок</td>
+                                            <td>индивидуальная</td>
+                                            <td>391,0</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">супруг</td>
+                                            <td rowspan="2">-</td>
+                                            <td>жилой дом</td>
+                                            <td>общая долевая, 1/4</td>
+                                            <td>193,3</td>
+                                            <td>Россия</td>
+                                            <td rowspan="2">квартира</td>
+                                            <td rowspan="2">423,7</td>
+                                            <td rowspan="2">Россия</td>
+                                            <td rowspan="2">автомобиль легковой копейка</td>
+                                            <td rowspan="2">123 321,45</td>
+                                            <td rowspan="2">нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>земельный участок</td>
+                                            <td>общая долевая, 1/4</td>
+                                            <td>666,00</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">несовершеннолетний ребенок</td>
+                                            <td rowspan="3">-</td>
+                                            <td>квартира</td>
+                                            <td>общая долевая, 1/5</td>
+                                            <td>333,3</td>
+                                            <td>Россия</td>
+                                            <td rowspan="3">квартира</td>
+                                            <td rowspan="3">77,7</td>
+                                            <td rowspan="3">Россия</td>
+                                            <td rowspan="3">нет</td>
+                                            <td rowspan="3">нет</td>
+                                            <td rowspan="3">нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>жилой дом</td>
+                                            <td>общая долевая, 1/4</td>
+                                            <td>33,3</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td>земельный участок</td>
+                                            <td>общая долевая, 1/4</td>
+                                            <td>555,00</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">несовершеннолетний ребенок</td>
+                                            <td rowspan="3">-</td>
+                                            <td>квартира</td>
+                                            <td>общая долевая, 1/5</td>
+                                            <td>33,3</td>
+                                            <td>Россия</td>
+                                            <td rowspan="3">квартира</td>
+                                            <td rowspan="3">77,7</td>
+                                            <td rowspan="3">Россия</td>
+                                            <td rowspan="3">нет</td>
+                                            <td rowspan="3">нет</td>
+                                            <td rowspan="3">нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>жилой дом</td>
+                                            <td>общая долевая, 1/4</td>
+                                            <td>33,3</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td>земельный участок</td>
+                                            <td>общая долевая, 1/4</td>
+                                            <td>444,00</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">5</td>
+                                            <td rowspan="2">Пупкина А.Д.</td>
+                                            <td rowspan="2">заместитель главного бухгалтера</td>
+                                            <td>земельный участок</td>
+                                            <td>индивидуальная</td>
+                                            <td>121</td>
+                                            <td>Россия</td>
+                                            <td rowspan="2">квартира</td>
+                                            <td rowspan="2">55,5</td>
+                                            <td rowspan="2">Россия</td>
+                                            <td rowspan="2">автомобиль легковой</td>
+                                            <td rowspan="2">123 123,80</td>
+                                            <td rowspan="2">автомобиль легковой (кредит)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>жилой дом</td>
+                                            <td>индивидуальная</td>
+                                            <td>12</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">6</td>
+                                            <td rowspan="2">Пупкин А.Е.</td>
+                                            <td rowspan="2">заместитель главного бухгалтера</td>
+                                            <td>квартира</td>
+                                            <td>индивидуальная</td>
+                                            <td>33,4</td>
+                                            <td>Россия</td>
+                                            <td rowspan="2">нет</td>
+                                            <td rowspan="2">нет</td>
+                                            <td rowspan="2">нет</td>
+                                            <td rowspan="2">автомобиль легковой</td>
+                                            <td rowspan="2">23 234,23</td>
+                                            <td rowspan="2">нет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>квартира</td>
+                                            <td>общая долевая, 1/3</td>
+                                            <td>99,6</td>
+                                            <td>Россия</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!--
+Подвал
+-->
+<div id="iptm-footer"></div>
+
+
+<!--Modals-->
+<div id="iptm-modals">
+    <div id="iptm-feedback"></div>
+    <div id="iptm-search"></div>
+    <div id="iptm-login"></div>
+</div>
+
+
+</body>
+</html>
