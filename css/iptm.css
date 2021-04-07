@@ -663,3 +663,7 @@ li > a {
 .seminar_item_title {
     padding-left: 10px;
 }
+
+.long-text-button {
+    white-space: normal;
+}
